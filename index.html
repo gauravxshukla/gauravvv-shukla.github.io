@@ -1,46 +1,387 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gaurav Shukla – Front-End Developer, Writer, Designer.</title>
-        <meta name="description" content="Hi! I am Gaurav Shukla. A Software Engineer, Front-End Developer, Writer, Designer. Connect with me at gauravshukla.me!">
-        <meta name="author" content ="Gaurav Shukla, Contact: gauravvvshukla@gmail.com">
-        <meta property="og:url" content="https://gauravshukla.me/">
-        <meta property="og:site_name" content="Gaurav Shukla – Front-End Developer, Writer, Designer.">
-        <meta property="og:type" content="Portfolio Website">
-        <meta property="og:title" content="Gaurav Shukla – Front-End Developer, Writer, Designer.">
-        <meta property="og:image" content="/Assets/logo.png">
-        <meta property="og:description" content="Hi! I am Gaurav Shukla. A Software Engineer, Front-End Developer, Writer, Designer. Connect with me at gauravshukla.me!">
-        <link rel='icon' href="Assets/logo.ico" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
 
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <!--=============== SWIPER CSS ===============-->
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title> Gaurav Shukla - Software Developer, Designer. </title>
     </head>
     <body>
-        <header></header>
-        <div class="container">
-            <div class="column"></div>
-            <div class="main">
-                <h1>Coming Soon! :)</h1>
-                <p>
-                    Thanks for checking me out!<br>
-                    The Website is being build, appreciate your patience.
-                </p>
+        <!--=============== HEADER ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#home" class="nav__logo">GS.</a>
+
+                <div class="nav__menu">
+                    <ul class="nav__list">
+
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">
+                                <i class='bx bx-home-alt'></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">
+                                <i class='bx bx-user' ></i>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="#skills" class="nav__link">
+                                <i class='bx bx-book' ></i>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="#work" class="nav__link">
+                                <i class='bx bx-briefcase-alt-2' ></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <!-- Theme change button -->
+                <i class='bx bx-moon change-theme' id="theme-button"></i>
+            </nav>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <!--=============== HOME ===============-->
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div class="home__data">
+                        <span class="home__greeting">Hello, I am</span>
+                        <h1 class="home__name">Gaurav Shukla</h1>
+                        <h3 class="home__education">Software Developer</h3>
+
+                        <div class="home__buttons">
+                            <a download="" href="assets/pdf/Gaurav_Shukla.pdf" class="button button--ghost">
+                                Download CV
+                            </a>
+                            <a href="#about" class="button button--ghost">About me</a>
+
+                        </div>
+                    </div>
+                    <div class="home__handle">
+                        <img src="assets/img/home.png" alt="" class="home__img">
+                    </div>
+
+                    <div class="home__social-left">
+                        <a href="mailto:gauravvvshukla@gmail.com" target="_blank" class="home__social-link">
+                            <i class='bx bx-mail-send'></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/gauravv-shukla/" target="_blank" class="home__social-link">
+                            <i class='bx bxl-linkedin' ></i>
+                        </a>
+                        <a href="https://twitter.com/gauravv_shukla" target="_blank" class="home__social-link">
+                            <i class='bx bxl-twitter'></i>
+                        </a>
+
+                    </div>
+
+                    <div class="home__social-right">
+                        <a href="https://github.com/gauravvv-shukla" target="_blank" class="home__social-link">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="https://medium.com/@gauravvvshukla" target="_blank" class="home__social-link">
+                            <i class='bx bxl-medium'></i>
+                        </a>
+
+                        <a href="https://www.behance.net/gauravv_shukla" target="_blank" class="home__social-link">
+                            <i class='bx bxl-behance' ></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <!--=============== ABOUT ===============-->
+            <section class="about section" id="about">
+                <h2 class="section__title">About Me</h2>
+
+                <div class="about__container container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
                 
+                <div class="about__data">
+                    <div class="about__info">
+
+                    <p class="about__description">
+                        Hello,<br>I am a Software Engineer by profession and an explorer by choice.<br>
+                        I read, write and design things.
+                    </p>
+
+                    <p class="about__description">
+                        Bored, right?<br>
+                        Okay, Let me tell you something about me apart from my technical interests.<br>
+                        I am a vivid book reader and a good poet.
+                        You can see some of my <a href="https://gauravv-shukla.medium.com/" class="about__link">poetry</a>.
+                    </p>
+
+                    <a href="#footer" class="button">Let's Connect!</a>
+                </div>
             </div>
-            <div class="column"></div>    
-        </div>
-        <footer>
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
+            </section>
+
+            <!--=============== SKILLS ===============-->
+            <section class="skills section" id="skills">
+                <h2 class="section__title">Skills</h2>
+                <div class="skills__container container grid">
+                    <div class="skills__content">
+                        <h3 class="skills__title">Frontend Developer</h3>
+                        <div class="skills__box">
+                            <div class="skills__group">
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">HTML</h3>
+                                        <span class="skills__level">Expert</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">CSS</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+
+                            </div>
+                            <div class="skills__group">
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Bootstrap</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Angular</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>  
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">React</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills__content">
+                        <h3 class="skills__title">Backend Developer</h3>
+                        
+                        <div class="skills__box">
+                            <div class="skills__group">
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Javascript</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MySQL</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">MongoDB</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+
+                            </div>
+                            <div class="skills__group">
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+                                    
+                                    <div>
+                                        <h3 class="skills__name">Git / Github</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>
+                            
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Node JS</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>  
+
+                                <div class="skills__data">
+                                    <i class='bx bxs-badge-check'></i>
+
+                                    <div>
+                                        <h3 class="skills__name">Express JS</h3>
+                                        <span class="skills__level">Intermediate</span>
+                                    </div>
+                                </div>    
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--=============== WORK ===============-->
+            <section class="work section" id="work">
+                <h2 class="section__title">Projects</h2>
+
+                <div class="work__container container grid">
+                    
+                    <div class="work__card">
+                        <img src="assets/img/Emo-player.png" alt="" class="work__img">
+                        <h3 class="work__title">Emo-player</h3>
+                        <a href="https://github.com/gauravvv-shukla/Emoplayer" target="_blank" class="work__button work__button-left">
+                            Code <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+
+                        <!-- Live Link -->
+                        <!-- <a href="" class="work__button work__button-right">
+                            Live <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                    </div>
+
+                    <div class="work__card">
+                        <img src="assets/img/Bulwark.png" alt="" class="work__img">
+                        <h3 class="work__title">Bulwark</h3>
+                        <a href="https://github.com/gauravvv-shukla/Bulwark" target="_blank" class="work__button work__button-left">
+                            Code <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+
+                        <!-- Live Link -->
+                        <!-- <a href="" class="work__button work__button-right">
+                            Live <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                    </div>
+
+                    <div class="work__card">
+                        <img src="assets/img/Share-your-ride.png" alt="" class="work__img">
+                        <h3 class="work__title">Share-A-Ride</h3>
+                        <a href="https://github.com/gauravvv-shukla/Share-Your-Ride" target="_blank" class="work__button work__button-left">
+                            Code <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a>
+
+                        <!-- Live Link -->
+                        <!-- <a href="" class="work__button work__button-right">
+                            Live <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                    </div>
+
+                    <!-- Future Scope -->
+                    <!-- <div class="work__card mix game">
+                        <img src="assets/img/snake-game.png" alt="" class="work__img">
+                        <h3 class="work__title">Snake - Game</h3>
+                        <a href="#"  class="work__button work__button-left">
+                            Code <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                        
+                        <!-- Live Link -->
+                        <!-- <a href="" class="work__button work__button-right">
+                            Live <i class="bx bx-right-arrow-alt work__icon"></i>
+                        </a> -->
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+
+        <!--=============== FOOTER ===============-->
+        <footer class="footer" id="footer">
+            <div class="footer__container container">
+                <h1 class="footer__title">Connect with Me!</h1>
+                <ul class="footer__social">
+
+                    <a href="mailto:gauravvvshukla@gmail.com" target="_blank" class="footer__social-link">
+                        <i class='bx bx-mail-send'></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/gauravv-shukla/" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+
+                    <a href="https://twitter.com/gauravv_shukla" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-twitter'></i>
+                    </a>
+
+                    <a href="https://github.com/gauravvv-shukla" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-github'></i>
+                    </a>
+
+                    <a href="https://medium.com/@gauravvvshukla" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-medium'></i>
+                    </a>
+
+                    <a href="https://www.behance.net/gauravv_shukla" target="_blank" class="footer__social-link">
+                        <i class='bx bxl-behance' ></i>
+                    </a>
+
                 </ul>
-            </nav>    
+                <span class="footer__copy">
+                    &#169; Gaurav Shukla. <br>All Rights Reserved.
+                </span>
+            </div>
         </footer>
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== SWIPER JS ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>

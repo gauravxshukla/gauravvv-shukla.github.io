@@ -15,13 +15,19 @@
         <meta property="og:description" content="Hi! I am Gaurav Shukla. A Software Engineer, Front-End Developer, Writer, Designer. Connect with me at gauravshukla.me!">
 
         <!--============== Google Fonts =====================-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://unpkg.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"  media="print" onload="this.media='all'" />
+        <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Trocchi&display=swap"  media="print" onload="this.media='all'" />
+        
         <!--=============== FAVICON ===============-->
         <link rel="shortcut icon" href="assets/img/favicon.webp" type="image/x-icon">
 
-        <!--=============== BOXICONS ===============-->
-        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!--========== Boxicons CSS==============-->
+        <link rel="preconnect" href="https://unpkg.com" crossorigin>
+        <link rel="preload" as="style" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"  media="print" onload="this.media='all'" />
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -390,5 +396,8 @@
 
         <!--=============== MAIN JS ===============-->
         <script async src="assets/js/main.js"></script>
+        <noscript>
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" />
+        </noscript>
     </body>
 </html>
